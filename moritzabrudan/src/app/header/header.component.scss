@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    height: 100vh;
+    img {
+        width: 50%;
+        height: 70%;
+        margin-top: 125px;
+        object-fit: cover;
+    }
+}
+
+.intro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1818235e;
+    color: white;
+    width: 60%;
+    height: 65%;
+    padding-top: 230px;
+    padding-left: 80px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    h1 {
+        font-size: 45px;
+    }
+}

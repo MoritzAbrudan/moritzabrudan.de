@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+    color: white;
+}
+
+.text-container {
+    width: 50%;
+    div {
+        margin-bottom: 20px;
+    }
+}
+
+.form-container {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    label {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    input {
+        color: white;
+        background-color: #181823;
+        border: none;
+        margin-bottom: 12px;
+        height: 24px;
+        font-family: 'Sen', sans-serif;
+        font-size: 16px;
+    }
+    textarea {
+        background-color: #181823;
+        border: none;
+        margin-bottom: 32px;
+        font-family: 'Sen', sans-serif;
+        font-size: 16px;
+        color: white;
+    }
+    button {
+        background-color: #5221e6;
+        border: none;
+        height: 56px;
+        font-family: 'Sen', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            background-color: #1e0079;
+        }
+    }
+}
