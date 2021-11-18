@@ -1,9 +1,16 @@
+:root {
+    --black: black;
+    --white: white;
+    --bg-light: rgba(0, 0, 0, 0.10);
+}
+
 body {
     font-family: 'Sen', sans-serif;
-    background-color: black;
+    background-color: var(--black);
     margin: 0;
     width: 100%;
     max-width: 1920px;
+    color: var(--white);
 }
 
 .text-big {

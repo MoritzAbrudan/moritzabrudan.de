@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     margin: 70px;
-    color: white;
 }
 
 .text-container {
@@ -24,7 +23,7 @@ form {
         font-size: 16px;
     }
     input {
-        color: white;
+        color: var(--white);
         background-color: #181823;
         border: none;
         margin-bottom: 12px;
@@ -38,7 +37,7 @@ form {
         margin-bottom: 32px;
         font-family: 'Sen', sans-serif;
         font-size: 16px;
-        color: white;
+        color: var(--white);
     }
     button {
         background-color: #5221e6;
@@ -47,7 +46,7 @@ form {
         font-family: 'Sen', sans-serif;
         font-weight: 700;
         font-size: 18px;
-        color: white;
+        color: var(--white);
         cursor: pointer;
         &:hover {
             background-color: #1e0079;
