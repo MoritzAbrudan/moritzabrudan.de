@@ -1,0 +1,25 @@
+.container {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 70px;
+}
+
+.overview {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.field {
+    width: 30%;
+    img {
+        width: 100%;
+    }
+}

@@ -8,9 +8,7 @@
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.5);
     div {
-        height: 70px;
         display: flex;
-        align-items: center;
     }
     a {
         display: flex;
@@ -24,6 +22,23 @@
         padding-top: 25px;
         font-weight: 400;
         font-size: 16px;
+        &:hover {
+            opacity: 100%;
+            background-color: #5221e6;
+        }
+    }
+    .link {
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        opacity: 70%;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        cursor: pointer;
         &:last-child {
             padding-right: 60px;
         }
