@@ -1,3 +1,8 @@
+.container {
+    max-width: 100%;
+    display: flex;
+}
+
 .left {
     width: 50%;
     background-color: var(--white);
@@ -6,4 +11,7 @@
 
 .right {
     width: 50%;
+    img {
+        width: 100%;
+    }
 }
