@@ -1,10 +1,18 @@
 <div class="container section">
-    <div class="text-container">
+    <div class="text-container" *ngIf="languageService.english">
         <div class="text-big">
             Get in touch with me!
         </div>
         <div>
             Now that you know a lot about me, let me know if your are interessted to work with me.
+        </div>
+    </div>
+    <div class="text-container" *ngIf="!languageService.english">
+        <div class="text-big">
+            Nehmen Sie Kontakt mit mir auf!
+        </div>
+        <div>
+            Da Sie nun viel über mich erfahren haben, würde ich mich freuen, wenn Sie interesse haben mit mir gemeinsam zu arbeiten.
         </div>
     </div>
     <div class="form-container">
@@ -13,9 +21,11 @@
             <input type="text" id="name" name="name" required>
             <label for="email">E-Mail</label>
             <input type="email" name="E-Mail" id="email" required>
-            <label for="message">Message</label>
+            <label for="message" *ngIf="languageService.english">Message</label>
+            <label for="message" *ngIf="!languageService.english">Nachricht</label>
             <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
-            <button>GET IN TOUCH</button>
+            <button *ngIf="languageService.english">GET IN TOUCH</button>
+            <button *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
         </form>
     </div>
 </div>

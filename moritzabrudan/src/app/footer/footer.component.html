@@ -13,17 +13,29 @@
                 <img src="../../assets/img/icons/GitHub-Mark-Light-32px.png">
             </a>
         </div>
-        <div class="legal">
+        <div class="legal" *ngIf="languageService.english">
             <a routerLink="/imprint">Imprint</a>
             <a routerLink="/data-protection">Data Protection</a>
         </div>
+        <div class="legal" *ngIf="!languageService.english">
+            <a routerLink="/imprint">Imressum</a>
+            <a routerLink="/data-protection">Datenschutz</a>
+        </div>
     </div>
-    <div class="sitemap">
+    <div class="sitemap" *ngIf="languageService.english">
         <a href="#header">Home</a>
-        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About Me</a>
+        <a href="#work">Work</a>
         <a href="#contact">Contact Me</a>
+    </div>
+    <div class="sitemap" *ngIf="!languageService.english">
+        <a href="#header">Home</a>
+        <a href="#projects">Projekte</a>
+        <a href="#skills">Fähigkeiten</a>
+        <a href="#about">Über Mich</a>
+        <a href="#work">Arbeit</a>
+        <a href="#contact">Kontakt</a>
     </div>
 </div>

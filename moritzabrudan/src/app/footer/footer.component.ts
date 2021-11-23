@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 import { ModeService } from '../mode.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { ModeService } from '../mode.service';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(public modeService:ModeService) { }
+  constructor(public modeService:ModeService, public languageService:LanguageService) { }
 
   ngOnInit(): void {
   }

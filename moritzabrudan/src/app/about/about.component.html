@@ -1,9 +1,15 @@
 <div id="about" class="container">
     <div class="left" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
-        <div class="text-big">
+        <div class="text-big" *ngIf="languageService.english">
             About me
         </div>
-        <div>
+        <div *ngIf="languageService.english">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam doloribus et illum pariatur est assumenda aut officiis sint saepe necessitatibus quis itaque ab iusto fuga adipisci dignissimos, ut officia.
+        </div>
+        <div class="text-big" *ngIf="!languageService.english">
+            Über mich
+        </div>
+        <div *ngIf="!languageService.english">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam doloribus et illum pariatur est assumenda aut officiis sint saepe necessitatibus quis itaque ab iusto fuga adipisci dignissimos, ut officia.
         </div>
     </div>
