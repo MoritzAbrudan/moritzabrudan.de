@@ -5,12 +5,12 @@
 
 .left {
     width: 50%;
-    background-color: var(--white);
-    color: var(--black);
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 60px;
+    background-color: var(--white);
+    color: var(--black);
     div:last-child {
         padding-top: 20px;
     }

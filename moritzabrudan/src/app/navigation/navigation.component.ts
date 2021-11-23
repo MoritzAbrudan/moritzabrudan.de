@@ -9,24 +9,13 @@ import { ModeService } from '../mode.service';
 })
 export class NavigationComponent implements OnInit {
 
-  modes: any;
-  darkMode: boolean = false;
-
-  constructor(private modeService: ModeService) { }
+  constructor(public modeService: ModeService) { }
 
   ngOnInit(): void {
-    this.getInfos();
-  }
-
-  getInfos() {
-    this.modes = this.modeService.getArray();
-    this.darkMode = this.modeService.getMode();
   }
 
   changeMode() {
-    this.darkMode = !this.darkMode
-    console.log('Mode changed ' + this.darkMode)
-    console.log(this.modes);
+    this.modeService.darkMode = !this.modeService.darkMode;
+    console.log('Mode changed ' + this.modeService.darkMode);
   }
-
 }

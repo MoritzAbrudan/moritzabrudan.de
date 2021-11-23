@@ -13,8 +13,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #1818235e;
-    color: var(--white);
     width: 60%;
     height: 65%;
     padding-top: 230px;
@@ -25,4 +23,14 @@
     h1 {
         font-size: 45px;
     }
+}
+
+dark {
+    background-color: #1818235e;
+    color: var(--white);
+}
+
+light {
+    background-color: #9494d15e;
+    color: var(--black);
 }

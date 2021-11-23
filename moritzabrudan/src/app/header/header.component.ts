@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { ModeService } from '../mode.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  providers: [ModeService]
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modeService: ModeService) {
+  }
 
   ngOnInit(): void {
   }

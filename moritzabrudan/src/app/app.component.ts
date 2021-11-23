@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModeService } from './mode.service';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,5 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'moritzabrudan';
   currentRoute = '';
-  constructor(public router: Router) { }
+  constructor(public router: Router, public modeService: ModeService) { }
 }
