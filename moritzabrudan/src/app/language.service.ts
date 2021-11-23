@@ -5,5 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class LanguageService {
 
+  english: boolean = true;
+
+  getLanguage() {
+    return this.english;
+  }
+
   constructor() { }
 }

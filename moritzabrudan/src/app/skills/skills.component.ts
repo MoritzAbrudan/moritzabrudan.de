@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModeService } from '../mode.service';
 
 @Component({
   selector: 'app-skills',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modeService: ModeService) { }
 
   ngOnInit(): void {
   }

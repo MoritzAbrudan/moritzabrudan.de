@@ -1,5 +1,6 @@
-<div class="header">
-    <a href="#header" class="logo"><img src="../../assets/img/Logo.png"></a>
+<div class="header" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
+    <a href="#header" class="logo" *ngIf="modeService.darkMode"><img src="../../assets/img/Logo.png"></a>
+    <a href="#header" class="logo" *ngIf="!modeService.darkMode"><img src="../../assets/img/Logo-black.png"></a>
     <div>
         <a href="#header">Home</a>
         <a href="#projects">Projects</a>
@@ -7,7 +8,9 @@
         <a href="#about">About Me</a>
         <a href="#work">Work</a>
         <a href="#contact">Contact Me</a>
-        <div class="link">DE</div>
-        <div class="link" (click)='changeMode()' id="darkMode"><img id="mode" src="../../assets/img/icons/sun-white.png"></div>
+        <div class="link" (click)='changeLanguage()' *ngIf="languageService.english">EN</div>
+        <div class="link" (click)='changeLanguage()' *ngIf="!languageService.english">DE</div>
+        <div class="link" (click)='changeMode()' *ngIf="modeService.darkMode"><img src="../../assets/img/icons/sun-white.png"></div>
+        <div class="link" (click)='changeMode()' *ngIf="!modeService.darkMode"><img src="../../assets/img/icons/moon-black.png"></div>
     </div>
 </div>

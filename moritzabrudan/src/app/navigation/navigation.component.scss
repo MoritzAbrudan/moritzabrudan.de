@@ -6,14 +6,12 @@
     display: flex;
     justify-content: space-between;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.5);
     div {
         display: flex;
     }
     a {
         display: flex;
         align-items: center;
-        color: var(--white);
         opacity: 70%;
         text-decoration: none;
         padding-left: 16px;
@@ -30,7 +28,6 @@
     .link {
         display: flex;
         align-items: center;
-        color: var(--white);
         opacity: 70%;
         padding-left: 16px;
         padding-right: 16px;
@@ -65,5 +62,31 @@
     }
     &:hover {
         background-color: unset !important;
+    }
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    a {
+        color: var(--white);
+    }
+    .link {
+        color: var(--white);
+    }
+}
+
+.light {
+    background-color: rgba(167, 167, 167, 1);
+    a {
+        color: var(--black);
+        &:hover {
+            color: var(--white);
+        }
+    }
+    .link {
+        color: var(--black);
+        &:hover {
+            color: var(--white);
+        }
     }
 }

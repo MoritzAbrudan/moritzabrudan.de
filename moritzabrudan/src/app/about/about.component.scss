@@ -9,7 +9,6 @@
     justify-content: center;
     flex-direction: column;
     padding: 60px;
-    background-color: var(--white);
     color: var(--black);
     div:last-child {
         padding-top: 20px;
@@ -21,4 +20,12 @@
     img {
         width: 100%;
     }
+}
+
+.dark {
+    background-color: var(--white);
+}
+
+.light {
+    background-color: rgba(167, 167, 167, 0.25);
 }

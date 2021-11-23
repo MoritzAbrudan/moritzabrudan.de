@@ -3,7 +3,6 @@ table {
     width: 100%;
     .bigNr {
         font-size: 90px;
-        color: #8491a0;
     }
     td {
         width: 33%;
@@ -22,4 +21,16 @@ table {
 
 .red {
     color: #e95d90;
+}
+
+.dark {
+    .bigNr {
+        color: #8491a0;
+    }
+}
+
+.light {
+    .bigNr {
+        color: #3a4047;
+    }
 }

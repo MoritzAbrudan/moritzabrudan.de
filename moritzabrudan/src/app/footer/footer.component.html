@@ -1,6 +1,7 @@
-<div class="footer">
+<div class="footer" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
     <div class="footer-left">
-        <a href="#header" class="logo"><img src="../../assets/img/Logo.png"></a>
+        <a href="#header" class="logo" *ngIf="modeService.darkMode"><img src="../../assets/img/Logo.png"></a>
+        <a href="#header" class="logo" *ngIf="!modeService.darkMode"><img src="../../assets/img/Logo-black.png"></a>
         <div class="link">
             <a href="">
                 <img src="../../assets/img/icons/LI-In-Bug.png">

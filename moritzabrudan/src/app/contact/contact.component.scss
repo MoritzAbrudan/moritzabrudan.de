@@ -22,8 +22,6 @@ form {
         font-size: 16px;
     }
     input {
-        color: var(--white);
-        background-color: #181823;
         border: none;
         margin-bottom: 12px;
         height: 24px;
@@ -31,12 +29,10 @@ form {
         font-size: 16px;
     }
     textarea {
-        background-color: #181823;
         border: none;
         margin-bottom: 32px;
         font-family: 'Sen', sans-serif;
         font-size: 16px;
-        color: var(--white);
     }
     button {
         background-color: #5221e6;
@@ -50,5 +46,27 @@ form {
         &:hover {
             background-color: #1e0079;
         }
+    }
+}
+
+.dark {
+    input {
+        color: var(--white);
+        background-color: #181823;
+    }
+    textarea {
+        background-color: #181823;
+        color: var(--white);
+    }
+}
+
+.light {
+    input {
+        color: var(--black);
+        background-color: rgba(167, 167, 167, 0.25);
+    }
+    textarea {
+        background-color: rgba(167, 167, 167, 0.25);
+        color: var(--black);
     }
 }
