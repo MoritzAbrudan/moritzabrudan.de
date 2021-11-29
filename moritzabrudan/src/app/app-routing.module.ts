@@ -4,9 +4,10 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 import { HeaderComponent } from './header/header.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { SkillsComponent } from './skills/skills.component';
+import { StartComponent } from './start/start.component';
 
 const routes: Routes = [
-  {path: '', component: HeaderComponent},
+  {path: '', component: StartComponent},
   {path:'imprint', component: ImprintComponent},
   {path:'data-protection', component: DataProtectionComponent},
 ];
