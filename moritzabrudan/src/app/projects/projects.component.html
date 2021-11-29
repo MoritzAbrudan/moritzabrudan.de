@@ -1,44 +1,79 @@
 <div id="projects" class="container">
-    <h2>
-        My PROJECTS
+    <h2 *ngIf="languageService.english">
+        MY PROJECTS
     </h2>
-    <div class="text-big">
+    <div class="text-big" *ngIf="languageService.english">
         Work that I have done in the past
+    </div>
+    <h2 *ngIf="!languageService.english">
+        MEINE PROJEKTE
+    </h2>
+    <div class="text-big" *ngIf="!languageService.english">
+        Arbeiten, die ich in den letzten Monaten gemacht habe
     </div>
     <div class="overview">
         <div class="row">
             <div class="field">
-                <div>
-                    <div class="text-big">
-                        El Pollo Loco
+                <div class="project">
+                    <div class="headline">El Pollo Loco</div>
+                    <div class="description" *ngIf="languageService.english">
+                        A Jump and Run game based on objectoriented programming with JavaScript.
                     </div>
-                    <img src="../../assets/img/16.jpg">
-                </div>
-            </div>
-            <div class="field">
-                <div>
-                    <div class="text-big">
-                        Kanban Board
+                    <div class="description" *ngIf="!languageService.english">
+                        Ein Jump and Run-Spiel, das mit objektorientierter Programmierung mit JavaScript erstellt wurde.
                     </div>
-                    <img src="../../assets/img/16.jpg">
-                </div>
-            </div>
-        </div>
-        <div class="field">
-            <img src="../../assets/img/16.jpg">
-        </div>
-        <div class="row">
-            <div class="field">
-                <div class="text-big">
-                    Sharky
+                    <div class="button">
+                        Let's Go!
+                    </div>
                 </div>
                 <img src="../../assets/img/16.jpg">
             </div>
             <div class="field">
-                <div class="text-big">
-                    Business App
+                <div class="project">
+                    <div class="headline">Kanban Board</div>
+                    <div class="description" *ngIf="languageService.english">
+                        An applicaion for planing tasks in groups and show them in a table depending the status.
+                    </div>
+                    <div class="description" *ngIf="!languageService.english">
+                        Ein Programm zur Planung von Aufgaben in Gruppen mit Darstellung aller Aufgaben in einer Tabelle nach Arbeitsvortschritt.
+                    </div>
+                    <div class="button">
+                        Let's Go!
+                    </div>
                 </div>
-                <img src="../../assets/img/16.jpg" alt="">
+                <img src="../../assets/img/16.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="field">
+                <div class="project">
+                    <div class="headline">???????</div>
+                    <div class="description" *ngIf="languageService.english">
+                        ???????????????
+                    </div>
+                    <div class="description" *ngIf="!languageService.english">
+                        ??????
+                    </div>
+                    <div class="button">
+                        Let's Go!
+                    </div>
+                </div>
+                <img src="../../assets/img/16.jpg">
+            </div>
+            <div class="field">
+                <div class="project">
+                    <div class="headline">Business App</div>
+                    <div class="description" *ngIf="languageService.english">
+                        ??????
+                    </div>
+                    <div class="description" *ngIf="!languageService.english">
+                        ???????????????
+                    </div>
+                    <div class="button">
+                        Let's Go!
+                    </div>
+                </div>
+                <img src="../../assets/img/16.jpg">
             </div>
         </div>
     </div>
