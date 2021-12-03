@@ -1,0 +1,109 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo {
+    padding: 0 !important;
+    opacity: unset !important;
+    img {
+        height: 60px !important;
+        width: auto !important;
+    }
+    &:hover {
+        background-color: unset !important;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 5px;
+    }
+    a {
+        text-decoration: none;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        &:hover {
+            opacity: 100%;
+            background-color: #5221e6;
+        }
+    }
+    .container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        div {
+            display: flex;
+            justify-content: center;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            cursor: pointer;
+            &:hover {
+                opacity: 100%;
+                background-color: #5221e6;
+            }
+            img {
+                width: 19px;
+                height: 19px;
+            }
+        }
+    }
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.8);
+    a {
+        color: var(--white);
+    }
+    .link {
+        color: var(--white);
+    }
+}
+
+.light {
+    background-color: rgba(167, 167, 167, 1);
+    a {
+        color: var(--black);
+        &:hover {
+            color: var(--white);
+        }
+    }
+    .link {
+        color: var(--black);
+        &:hover {
+            color: var(--white);
+        }
+    }
+}

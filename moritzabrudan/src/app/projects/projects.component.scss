@@ -64,3 +64,25 @@
         }
     }
 }
+
+@media(max-width: 850px) {
+    .project {
+        padding: unset;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media(max-width:740px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        &:first-child {
+            margin-bottom: unset !important;
+        }
+    }
+    .field {
+        width: unset;
+        margin-bottom: 32px;
+    }
+}

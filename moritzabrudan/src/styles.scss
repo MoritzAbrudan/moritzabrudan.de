@@ -34,3 +34,9 @@ h2 {
     background-color: var(--bg-light);
     color: var(--black);
 }
+
+@media(max-width: 740px) {
+    .text-big {
+        font-size: 25px;
+    }
+}

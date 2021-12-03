@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModeService } from './mode.service';
 
@@ -7,12 +7,14 @@ import { ModeService } from './mode.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'moritzabrudan';
   currentRoute = '';
   mobile: boolean = false;
-  constructor(public router: Router, public modeService: ModeService) {
-    if (window.screen.width <= 740) {
+  constructor(public router: Router, public modeService: ModeService) { }
+
+  ngOnInit(): void {
+    if (window.innerWidth <= 740) {
       this.mobile = true;
     }
   }

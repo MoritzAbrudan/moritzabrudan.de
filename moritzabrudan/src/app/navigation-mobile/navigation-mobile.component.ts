@@ -9,6 +9,8 @@ import { ModeService } from '../mode.service';
 })
 export class NavigationMobileComponent implements OnInit {
 
+  mobile: boolean = false;
+
   constructor(public modeService: ModeService, public languageService: LanguageService) { }
 
   ngOnInit(): void {
@@ -16,12 +18,18 @@ export class NavigationMobileComponent implements OnInit {
 
   changeMode() {
     this.modeService.darkMode = !this.modeService.darkMode;
-    console.log('Mode changed ' + this.modeService.darkMode);
   }
 
   changeLanguage() {
     this.languageService.english = !this.languageService.english;
-    console.log('Language changed ' + this.languageService.english);
   }
 
-} 
+  open() {
+    this.mobile = true;
+  }
+
+  close(){
+    this.mobile = false;
+  }
+
+}

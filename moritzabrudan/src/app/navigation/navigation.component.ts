@@ -16,11 +16,9 @@ export class NavigationComponent implements OnInit {
 
   changeMode() {
     this.modeService.darkMode = !this.modeService.darkMode;
-    console.log('Mode changed ' + this.modeService.darkMode);
   }
 
   changeLanguage() {
     this.languageService.english = !this.languageService.english;
-    console.log('Language changed ' + this.languageService.english);
   }
 }
