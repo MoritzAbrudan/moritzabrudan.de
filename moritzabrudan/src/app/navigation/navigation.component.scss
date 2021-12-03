@@ -48,6 +48,20 @@
             height: 19px;
         }
     }
+    @media(max-width: 930px) {
+        .link {
+            &:last-child {
+                padding-right: 30px;
+            }
+        }
+    }
+    @media(max-width: 850px) {
+        .link {
+            &:last-child {
+                padding-right: 5px;
+            }
+        }
+    }
 }
 
 .logo {
@@ -62,6 +76,12 @@
     }
     &:hover {
         background-color: unset !important;
+    }
+    @media(max-width: 930px) {
+        margin-left: 30px;
+    }
+    @media(max-width: 850px) {
+        margin-left: 5px;
     }
 }
 

@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { StartComponent } from './start/start.component';
+import { NavigationMobileComponent } from './navigation-mobile/navigation-mobile.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { StartComponent } from './start/start.component';
     ContactComponent,
     WorkComponent,
     AboutComponent,
-    StartComponent
+    StartComponent,
+    NavigationMobileComponent
   ],
   imports: [
     BrowserModule,

@@ -49,6 +49,14 @@ form {
     }
 }
 
+a {
+    text-decoration: none;
+    color: #5221e6;
+    &:hover {
+        color: #7247f3;
+    }
+}
+
 .dark {
     input {
         color: var(--white);

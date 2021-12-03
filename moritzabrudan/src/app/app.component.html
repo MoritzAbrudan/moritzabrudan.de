@@ -1,5 +1,6 @@
 <div [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
-    <app-navigation></app-navigation>
+    <app-navigation *ngIf="!mobile"></app-navigation>
+    <app-navigation-mobile *ngIf="mobile"></app-navigation-mobile>
     <router-outlet></router-outlet>
     <app-footer></app-footer>
 </div>

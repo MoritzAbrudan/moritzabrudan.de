@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
-import { HeaderComponent } from './header/header.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import { SkillsComponent } from './skills/skills.component';
 import { StartComponent } from './start/start.component';
 
 const routes: Routes = [

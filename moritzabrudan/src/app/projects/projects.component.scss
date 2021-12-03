@@ -6,12 +6,7 @@
 
 .overview {
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     .row {
-        width: 100%;
         display: flex;
         justify-content: space-around;
         &:first-child {
@@ -28,6 +23,12 @@
         height: 100%;
         object-fit: cover;
     }
+    .only-show-on-hover {
+        visibility: hidden;
+    }
+    &:hover .only-show-on-hover {
+        visibility: visible;
+    }
 }
 
 .project {
@@ -35,10 +36,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 100%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 12px;
-    cursor: pointer;
     .headline {
         font-size: 24px;
     }
@@ -49,7 +51,16 @@
     .button {
         display: flex;
         justify-content: center;
+        align-items: center;
         font-weight: 700;
-        border: 1px solid rgba(0, 0, 0, 0.8);
+        border: 1px solid #5221e6;
+        text-decoration: none;
+        color: #5221e6;
+        width: 40%;
+        height: 40px;
+        &:hover {
+            background-color: #5221e6;
+            color: var(--white);
+        }
     }
 }

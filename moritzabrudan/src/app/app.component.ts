@@ -10,5 +10,10 @@ import { ModeService } from './mode.service';
 export class AppComponent {
   title = 'moritzabrudan';
   currentRoute = '';
-  constructor(public router: Router, public modeService: ModeService) { }
+  mobile: boolean = false;
+  constructor(public router: Router, public modeService: ModeService) {
+    if (window.screen.width <= 740) {
+      this.mobile = true;
+    }
+  }
 }

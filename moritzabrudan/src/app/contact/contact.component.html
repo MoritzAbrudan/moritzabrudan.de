@@ -4,7 +4,7 @@
             Get in touch with me!
         </div>
         <div>
-            Now that you know a lot about me, let me know if your are interessted to work with me.
+            Now that you know a lot about me, let me know if your are interessted to work with me. You can fill out the form or send me an <a href="mailto:m.abrudan@t-online.de">email</a> directly.
         </div>
     </div>
     <div class="text-container" *ngIf="!languageService.english">
@@ -12,11 +12,11 @@
             Nehmen Sie Kontakt mit mir auf!
         </div>
         <div>
-            Da Sie nun viel über mich erfahren haben, würde ich mich freuen, wenn Sie interesse haben mit mir gemeinsam zu arbeiten.
+            Da Sie nun viel über mich erfahren haben, würde ich mich freuen, wenn Sie interesse haben mit mir gemeinsam zu arbeiten. Gerne können Sie das Formular ausfüllen oder mir direkt eine <a href="mailto:m.abrudan@t-online.de">E-Mail</a> schreiben
         </div>
     </div>
     <div class="form-container">
-        <form onsubmit="" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
+        <form action="" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
             <label for="email">E-Mail</label>
@@ -24,8 +24,8 @@
             <label for="message" *ngIf="languageService.english">Message</label>
             <label for="message" *ngIf="!languageService.english">Nachricht</label>
             <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
-            <button *ngIf="languageService.english">GET IN TOUCH</button>
-            <button *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
+            <button type="submit" value="Submit" *ngIf="languageService.english">GET IN TOUCH</button>
+            <button type="submit" value="Submit" *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
         </form>
     </div>
 </div>
