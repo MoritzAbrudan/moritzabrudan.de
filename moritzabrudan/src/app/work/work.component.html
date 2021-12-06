@@ -3,38 +3,102 @@
     <div class="text-big" *ngIf="languageService.english">Companies I have worked for in the past.</div>
     <h2 *ngIf="!languageService.english">BERUFSERFAHRUNG</h2>
     <div class="text-big" *ngIf="!languageService.english">Firmen, für die ich bereits gearbeitet habe. </div>
-    <table *ngIf="languageService.english">
-        <tr>
-            <td class="bigNr">01</td>
-            <td class="bigNr">02</td>
-            <td class="bigNr">03</td>
-        </tr>
-        <tr>
-            <td><span class="green">Able Catering</span>, Event Manager Logistics and Events</td>
-            <td><span class="blue">BKP</span>, Project Lead Event Organization</td>
-            <td><span class="red">ROWE MARKETING</span>, Junior Event Manager and Apprenticeship</td>
-        </tr>
-        <tr>
-            <td>I worked in the planning, organization and construction of foodstand, event and parties at trade fairs.</td>
-            <td>Planning and budgeting driving events for a premium car manufacturer from Germany in Sweden, Austria and Germany.</td>
-            <td>I worked here as an apprentice and after that I had a temporary position. Here my tasks were in the planning and excecution of fairs and concerts.</td>
-        </tr>
-    </table>
-    <table *ngIf="!languageService.english">
-        <tr>
-            <td class="bigNr">01</td>
-            <td class="bigNr">02</td>
-            <td class="bigNr">03</td>
-        </tr>
-        <tr>
-            <td><span class="green">Able Catering</span>, Event Manager Logistig und Veranstaltungen</td>
-            <td><span class="blue">BKP</span>, Projektleitung Eventorganisation</td>
-            <td><span class="red">ROWE MARKETING</span>, Junior Eventmanager und Ausbildung</td>
-        </tr>
-        <tr>
-            <td>Ich habe in der Planung, dem Aufbau und der Durchführung von Cateringständen, Veranstaltungen und Partys an der Messe gearbeitet</td>
-            <td>Meine Aufgaben waren die Planung und Budgetierung von Fahrtrainings eines Premium Autohersteller aus Deutschland, in Scweden, Österreich und Deutschland.</td>
-            <td>Hier habe ich meine Ausbildung als Veranstaltungskaufmann abgeschlossen. Danach wurde ich befristet übernommen. Meine Aufgaben waren hier die Planung und Durchführung von Messen und Konzerten.</td>
-        </tr>
-    </table>
+    <div *ngIf="table">
+        <table *ngIf="languageService.english">
+            <tr>
+                <td class="bigNr">01</td>
+                <td class="bigNr">02</td>
+                <td class="bigNr">03</td>
+            </tr>
+            <tr>
+                <td class="jobTitle"><span class="green">Able Catering</span>, Event Manager Logistics and Events</td>
+                <td class="jobTitle"><span class="blue">BKP</span>, Project Lead Event Organization</td>
+                <td class="jobTitle"><span class="red">ROWE MARKETING</span>, Junior Event Manager and Apprenticeship</td>
+            </tr>
+            <tr>
+                <td>I worked in the planning, organization and construction of foodstand, event and parties at trade fairs.
+                </td>
+                <td>Planning and budgeting driving events for a premium car manufacturer from Germany in Sweden, Austria and Germany.
+                </td>
+                <td>I worked here as an apprentice and after that I had a temporary position. Here my tasks were in the planning and excecution of fairs and concerts.</td>
+            </tr>
+        </table>
+        <table *ngIf="!languageService.english">
+            <tr>
+                <td class="bigNr">01</td>
+                <td class="bigNr">02</td>
+                <td class="bigNr">03</td>
+            </tr>
+            <tr>
+                <td class="jobTitle"><span class="green">Able Catering</span>, Event Manager Logistig und Veranstaltungen</td>
+                <td class="jobTitle"><span class="blue">BKP</span>, Projektleitung Eventorganisation</td>
+                <td class="jobTitle"><span class="red">ROWE MARKETING</span>, Junior Eventmanager und Ausbildung</td>
+            </tr>
+            <tr>
+                <td>Ich habe in der Planung, dem Aufbau und der Durchführung von Cateringständen, Veranstaltungen und Partys an der Messe gearbeitet.</td>
+                <td>Meine Aufgaben waren die Planung und Budgetierung von Fahrtrainings eines Premium Autohersteller aus Deutschland, in Scweden, Österreich und Deutschland.</td>
+                <td>Hier habe ich meine Ausbildung als Veranstaltungskaufmann abgeschlossen. Danach wurde ich befristet übernommen. Meine Aufgaben waren hier die Planung und Durchführung von Messen und Konzerten.</td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="!table">
+        <div *ngIf="languageService.english">
+            <div class="bigNr">
+                01
+            </div>
+            <div class="jobTitle">
+                <span class="green">Able Catering</span>, Event Manager Logistics and Events
+            </div>
+            <div class="margin">
+                I worked in the planning, organization and construction of foodstand, event and parties at trade fairs.
+            </div>
+            <div class="bigNr">
+                02
+            </div>
+            <div class="jobTitle">
+                <span class="blue">BKP</span>, Project Lead Event Organization
+            </div>
+            <div class="margin">
+                Planning and budgeting driving events for a premium car manufacturer from Germany in Sweden, Austria and Germany.
+            </div>
+            <div class="bigNr">
+                03
+            </div>
+            <div class="jobTitle">
+                <span class="red">ROWE MARKETING</span>, Junior Event Manager and Apprenticeship
+            </div>
+            <div class="margin">
+                I worked here as an apprentice and after that I had a temporary position. Here my tasks were in the planning and excecution of fairs and concerts.
+            </div>
+        </div>
+        <div *ngIf="!languageService.english">
+            <div class="bigNr">
+                01
+            </div>
+            <div class="jobTitle">
+                <span class="green">Able Catering</span>, Event Manager Logistig und Veranstaltungen
+            </div>
+            <div class="margin">
+                Ich habe in der Planung, dem Aufbau und der Durchführung von Cateringständen, Veranstaltungen und Partys an der Messe gearbeitet.
+            </div>
+            <div class="bigNr">
+                02
+            </div>
+            <div class="jobTitle">
+                <span class="blue">BKP</span>, Projektleitung Eventorganisation
+            </div>
+            <div class="margin">
+                Meine Aufgaben waren die Planung und Budgetierung von Fahrtrainings eines Premium Autohersteller aus Deutschland, in Scweden, Österreich und Deutschland.
+            </div>
+            <div class="bigNr">
+                03
+            </div>
+            <div class="jobTitle">
+                <span class="red">ROWE MARKETING</span>, Junior Eventmanager und Ausbildung
+            </div>
+            <div>
+                Hier habe ich meine Ausbildung als Veranstaltungskaufmann abgeschlossen. Danach wurde ich befristet übernommen. Meine Aufgaben waren hier die Planung und Durchführung von Messen und Konzerten.
+            </div>
+        </div>
+    </div>
 </div>

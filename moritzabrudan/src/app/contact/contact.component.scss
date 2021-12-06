@@ -5,6 +5,7 @@
 
 .text-container {
     width: 50%;
+    margin-right: 24px;
     div {
         margin-bottom: 20px;
     }
@@ -76,5 +77,19 @@ a {
     textarea {
         background-color: rgba(167, 167, 167, 0.25);
         color: var(--black);
+    }
+}
+
+@media( max-width:765px) {
+    .container {
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .text-container {
+        width: unset;
+        margin-right: unset;
+    }
+    .form-container {
+        width: unset;
     }
 }

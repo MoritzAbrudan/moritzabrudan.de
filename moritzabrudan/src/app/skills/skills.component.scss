@@ -3,7 +3,8 @@ table {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    td {
+    flex-direction: column;
+    .cell {
         position: relative;
         display: flex;
         justify-content: center;
@@ -50,5 +51,16 @@ table {
     .table-box {
         background-color: rgba(167, 167, 167, 0.25);
         color: var(--black);
+    }
+}
+
+@media(max-width: 470px) {
+    table {
+        .cell {
+            margin-top: unset;
+            margin-bottom: 53px;
+            margin-right: 8px;
+            margin-left: 8px;
+        }
     }
 }

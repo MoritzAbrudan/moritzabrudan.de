@@ -3,64 +3,166 @@
     <div class="text-big" *ngIf="languageService.english">What I have learned in the past.</div>
     <h2 *ngIf="!languageService.english">MEINE FÄHIGKEITEN</h2>
     <div class="text-big" *ngIf="!languageService.english">Was ich bereits gelernt habe.</div>
-    <table>
+    <table *ngIf="wide">
         <tr>
             <td>
-                <img class="image" src="../../assets/img/icons/javascript.png">
-                <div class="table-box">
-                    JavaScript
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/javascript.png">
+                    <div class="table-box">
+                        JavaScript
+                    </div>
                 </div>
             </td>
             <td>
-                <img class="image" src="../../assets/img/icons/angular.png">
-                <div class="table-box">
-                    Angular
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/angular.png">
+                    <div class="table-box">
+                        Angular
+                    </div>
                 </div>
             </td>
             <td>
-                <img class="image" src="../../assets/img/icons/HTML5.png">
-                <div class="table-box">
-                    HTML
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/HTML5.png">
+                    <div class="table-box">
+                        HTML
+                    </div>
                 </div>
             </td>
         </tr>
         <tr>
             <td>
-                <img class="image" src="../../assets/img/icons/css3.png">
-                <div class="table-box">
-                    CSS
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/css3.png">
+                    <div class="table-box">
+                        CSS
+                    </div>
                 </div>
             </td>
             <td>
-                <img class="image" src="../../assets/img/icons/git.png">
-                <div class="table-box">
-                    Git
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/git.png">
+                    <div class="table-box">
+                        Git
+                    </div>
                 </div>
             </td>
             <td>
-                <img class="image" src="../../assets/img/icons/scrum.png">
-                <div class="table-box">
-                    Scrum
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/scrum.png">
+                    <div class="table-box">
+                        Scrum
+                    </div>
                 </div>
             </td>
         </tr>
         <tr>
             <td>
-                <img class="image" src="../../assets/img/icons/rest-api.png">
-                <div class="table-box">
-                    Rest API
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/rest-api.png">
+                    <div class="table-box">
+                        Rest API
+                    </div>
                 </div>
             </td>
             <td>
-                <img class="image" src="../../assets/img/icons/database.png">
-                <div class="table-box">
-                    Databases
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/database.png">
+                    <div class="table-box">
+                        Databases
+                    </div>
                 </div>
             </td>
             <td>
-                <img class="image" src="../../assets/img/icons/firebase.png">
-                <div class="table-box">
-                    Firebase
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/firebase.png">
+                    <div class="table-box">
+                        Firebase
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table *ngIf="!wide">
+        <tr>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/javascript.png">
+                    <div class="table-box">
+                        JavaScript
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/angular.png">
+                    <div class="table-box">
+                        Angular
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/HTML5.png">
+                    <div class="table-box">
+                        HTML
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/css3.png">
+                    <div class="table-box">
+                        CSS
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/git.png">
+                    <div class="table-box">
+                        Git
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/scrum.png">
+                    <div class="table-box">
+                        Scrum
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/rest-api.png">
+                    <div class="table-box">
+                        Rest API
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/database.png">
+                    <div class="table-box">
+                        Databases
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cell">
+                    <img class="image" src="../../assets/img/icons/firebase.png">
+                    <div class="table-box">
+                        Firebase
+                    </div>
                 </div>
             </td>
         </tr>

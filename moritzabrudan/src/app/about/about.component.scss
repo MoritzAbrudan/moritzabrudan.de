@@ -29,3 +29,24 @@
 .light {
     background-color: rgba(167, 167, 167, 0.25);
 }
+
+@media(max-width: 800px) {
+    .container {
+        display: unset;
+    }
+    .left {
+        width: unset;
+    }
+    .right {
+        width: unset;
+    }
+}
+
+@media(max-width: 400px) {
+    .left {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

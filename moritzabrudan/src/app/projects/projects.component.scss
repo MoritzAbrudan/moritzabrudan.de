@@ -86,3 +86,13 @@
         margin-bottom: 32px;
     }
 }
+
+@media(max-width: 400px) {
+    .container {
+        padding: unset;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
