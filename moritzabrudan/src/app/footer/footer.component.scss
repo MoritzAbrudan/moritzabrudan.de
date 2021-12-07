@@ -57,6 +57,26 @@
     }
 }
 
+@media(max-width: 400px) {
+    .footer {
+        padding: unset;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .footer-left {
+        width: 100%;
+        margin-left: unset;
+    }
+    .legal {
+        width: unset;
+    }
+    .sitemap {
+        display: none;
+    }
+}
+
 .dark {
     background-color: #181823;
     a {
