@@ -9,13 +9,19 @@ import { ModeService } from '../mode.service';
 })
 export class WorkComponent implements OnInit {
 
-  table:boolean=true;
+  table: boolean = true;
 
   constructor(public modeService: ModeService, public languageService: LanguageService) { }
 
   ngOnInit(): void {
+    this.handleResize()
+  }
+
+  handleResize() {
     if (window.innerWidth <= 680) {
       this.table = false;
+    } else {
+      this.table = true;
     }
   }
 

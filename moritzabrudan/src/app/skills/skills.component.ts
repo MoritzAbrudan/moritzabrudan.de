@@ -14,8 +14,14 @@ export class SkillsComponent implements OnInit {
   constructor(public modeService: ModeService, public languageService: LanguageService) { }
 
   ngOnInit(): void {
+   this.handleResize();
+  }
+
+  handleResize(){
     if (window.innerWidth <= 663) {
       this.wide = false;
+    }else{
+      this.wide = true;
     }
   }
 

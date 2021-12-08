@@ -1,4 +1,4 @@
-<div id="work" class="section" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
+<div (window:resize)="handleResize()" id="work" class="section" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
     <h2 *ngIf="languageService.english">WORK EXPERIANCE</h2>
     <div class="text-big" *ngIf="languageService.english">Companies I have worked for in the past.</div>
     <h2 *ngIf="!languageService.english">BERUFSERFAHRUNG</h2>
