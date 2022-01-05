@@ -16,19 +16,25 @@
         </div>
     </div>
     <div class="form-container">
-        <form action="sendMail.php" method="post" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
+        <form (ngSubmit)="onSubmit (contactForm)" #contactForm="ngForm" [class.dark]="modeService.darkMode" [class.light]="!modeService.darkMode">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" name="name" [(ngModel)]="contact.name" #name="ngModel" required>
             <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" [(ngModel)]="contact.email" #email="ngModel" required>
             <label for="subject" *ngIf="languageService.english">Subject</label>
             <label for="subject" *ngIf="!languageService.english">Betreff</label>
-            <input type="text" id="subject" name="subject" required>
+            <input type="text" name="subject" [(ngModel)]="contact.subject" #subject="ngModel" required>
             <label for="message" *ngIf="languageService.english">Message</label>
             <label for="message" *ngIf="!languageService.english">Nachricht</label>
+<<<<<<< HEAD
             <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
             <button type="submit" value="submit" *ngIf="languageService.english">GET IN TOUCH</button>
             <button type="submit" value="submit" *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
+=======
+            <textarea name="message" cols="30" rows="10" [(ngModel)]="contact.message" #message="ngModel" required></textarea>
+            <button type="submit" value="Submit" *ngIf="languageService.english">GET IN TOUCH</button>
+            <button type="submit" value="Submit" *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
+>>>>>>> 919e9095b12db37b963283c1dc379acf819b527c
         </form>
     </div>
 </div>
