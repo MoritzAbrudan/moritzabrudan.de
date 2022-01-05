@@ -26,15 +26,9 @@
             <input type="text" name="subject" [(ngModel)]="contact.subject" #subject="ngModel" required>
             <label for="message" *ngIf="languageService.english">Message</label>
             <label for="message" *ngIf="!languageService.english">Nachricht</label>
-<<<<<<< HEAD
-            <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
+            <textarea name="message" cols="30" rows="10" [(ngModel)]="contact.message" #message="ngModel" required></textarea>
             <button type="submit" value="submit" *ngIf="languageService.english">GET IN TOUCH</button>
             <button type="submit" value="submit" *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
-=======
-            <textarea name="message" cols="30" rows="10" [(ngModel)]="contact.message" #message="ngModel" required></textarea>
-            <button type="submit" value="Submit" *ngIf="languageService.english">GET IN TOUCH</button>
-            <button type="submit" value="Submit" *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
->>>>>>> 919e9095b12db37b963283c1dc379acf819b527c
         </form>
     </div>
 </div>
