@@ -27,8 +27,8 @@
             <label for="message" *ngIf="languageService.english">Message</label>
             <label for="message" *ngIf="!languageService.english">Nachricht</label>
             <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
-            <button type="submit" value="Submit" *ngIf="languageService.english">GET IN TOUCH</button>
-            <button type="submit" value="Submit" *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
+            <button type="submit" value="submit" *ngIf="languageService.english">GET IN TOUCH</button>
+            <button type="submit" value="submit" *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
         </form>
     </div>
 </div>
