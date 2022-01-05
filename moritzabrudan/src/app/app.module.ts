@@ -15,6 +15,8 @@ import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { StartComponent } from './start/start.component';
 import { NavigationMobileComponent } from './navigation-mobile/navigation-mobile.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { NavigationMobileComponent } from './navigation-mobile/navigation-mobile
     WorkComponent,
     AboutComponent,
     StartComponent,
-    NavigationMobileComponent
+    NavigationMobileComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
