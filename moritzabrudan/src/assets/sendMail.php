@@ -20,7 +20,7 @@ switch($_SERVER['REQUEST_METHOD']){
 
         $recipient = 'm.abrudan@t-online.de';
         $subject = "Contact From $name <$email>";
-        $headers = "From:  m.abrudan@t-online.de";
+        $headers = "From:  contact@moritzabrudan.de";
 
         mail($recipient, $subject, $message, $headers);
         break;
