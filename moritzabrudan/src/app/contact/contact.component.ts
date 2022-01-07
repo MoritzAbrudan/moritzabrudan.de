@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  sendSuccess: boolean = false;
   contact = {
     name: '',
     email: '',
@@ -17,7 +18,7 @@ export class ContactComponent implements OnInit {
   }
 
   post = {
-    endPoint: 'https://moritzabrudan.de/sendMail.php',
+    endPoint: 'https://moritzabrudan.de/assets/sendMail.php',
 
     body: (payload: any) => JSON.stringify(payload),
 
@@ -41,7 +42,7 @@ export class ContactComponent implements OnInit {
         .subscribe({
           next: (response) => console.log(response),
           error: (error) => console.error(error),
-          complete: () => console.info('send post complete'),
+          complete: () => this.sendSuccess = true,
         });
     }
   }

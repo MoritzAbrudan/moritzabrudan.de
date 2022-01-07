@@ -1,4 +1,4 @@
-<div class="container section" id="contact">
+<div class="container section" id="contact" *ngIf="!sendSuccess">
     <div class="text-container" *ngIf="languageService.english">
         <div class="text-big">
             Get in touch with me!
@@ -21,14 +21,23 @@
             <input type="text" name="name" [(ngModel)]="contact.name" #name="ngModel" required>
             <label for="email">E-Mail</label>
             <input type="email" name="email" [(ngModel)]="contact.email" #email="ngModel" required>
-            <label for="subject" *ngIf="languageService.english">Subject</label>
-            <label for="subject" *ngIf="!languageService.english">Betreff</label>
-            <input type="text" name="subject" [(ngModel)]="contact.subject" #subject="ngModel" required>
             <label for="message" *ngIf="languageService.english">Message</label>
             <label for="message" *ngIf="!languageService.english">Nachricht</label>
             <textarea name="message" cols="30" rows="10" [(ngModel)]="contact.message" #message="ngModel" required></textarea>
             <button type="submit" value="submit" *ngIf="languageService.english">GET IN TOUCH</button>
             <button type="submit" value="submit" *ngIf="!languageService.english">KONTAKT AUFNEHMEN</button>
         </form>
+    </div>
+</div>
+<div class="container section" id="contact" *ngIf="sendSuccess">
+    <div *ngIf="languageService.english">
+        <div class="text-big">
+            The message has been send successfully!
+        </div>
+    </div>
+    <div *ngIf="!languageService.english">
+        <div class="text-big">
+            Die Nachricht wurde erfolgreich versendet!
+        </div>
     </div>
 </div>
